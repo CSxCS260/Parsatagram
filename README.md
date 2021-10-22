@@ -11,20 +11,6 @@ Time spent: **3** hours spent in total
 The following **required** functionality is completed:
 
 
-
-    User can view the last 20 posts submitted to "Instagram" (2 points)
-         Intro and Fragments
-
-     (2 points)
-         Bottom Navigation View
-         Compose Fragment
-         Fragment Manager
-         RecyclerView Posts
-         Parse Query and Profile Fragment
-
-    User can pull to refresh the last 20 posts submitted to "Instagram" (1 points)
-
-
 * [x] User can view the last 20 posts submitted to "Instagram" 
 * [x] UThe user should switch between different tabs - viewing all posts (feed view), compose (capture photos form camera) and profile tabs (posts made) using fragments and a Bottom Navigation View.
 * [x] User can pull to refresh the last 20 posts submitted to "Instagram"
