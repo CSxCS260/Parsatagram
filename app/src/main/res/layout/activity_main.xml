@@ -7,59 +7,19 @@
     tools:context=".MainActivity">
 
 
-    <EditText
-        android:id="@+id/descriptionET"
+    <FrameLayout
+        android:id="@+id/flContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Description"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_margin="70dp"/>
-
-    <Button
-        android:id="@+id/takepicBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Take Picture"
-        app:layout_constraintTop_toBottomOf="@id/descriptionET"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="70dp"
-        android:layout_marginEnd="70dp"/>
-
-    <ImageView
-        android:id="@+id/pictureIV"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/takepicBtn"/>
-
-    <Button
-        android:id="@+id/postBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Post It!"
-        app:layout_constraintTop_toBottomOf="@id/pictureIV"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="70dp"
-        android:layout_marginEnd="70dp"/>
-
-
-    <Button
-        android:id="@+id/logoutBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Log Out"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="70dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="100dp"/>
-
+        app:menu="@menu/menu_bottom_navigation"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
